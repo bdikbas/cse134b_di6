@@ -1,0 +1,10 @@
+---
+const { name, team, position, href, blurb } = Astro.props;
+---
+
+<article class="player-card">
+  <h2><a href={href}>{name}</a></h2>
+  <p><strong>Team:</strong> {team}</p>
+  <p><strong>Position:</strong> {position}</p>
+  <p>{blurb}</p>
+</article>

@@ -1,0 +1,30 @@
+---
+import NavBar from "../components/NavBar.astro";
+
+const {
+  title = "Hoop Profiles",
+  description = "Static site about basketball players",
+} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <NavBar />
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>© {new Date().getFullYear()} Hoop Profiles</p>
+    </footer>
+  </body>
+</html>

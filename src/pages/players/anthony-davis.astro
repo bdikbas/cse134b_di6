@@ -1,0 +1,29 @@
+---
+import PlayerLayout from "../../layouts/PlayerLayout.astro";
+
+const name = "Anthony Davis";
+const team = "Dallas Mavericks";
+const position = "Center/Forward";
+---
+
+<PlayerLayout {name} {team} {position}>
+  <p>
+    Anthony Davis is a two-way big who anchors the paint defensively and
+    provides efficient scoring inside the arc. At his best, he’s a franchise-level
+    rim protector and interior finisher who shifts a team’s ceiling on both ends.
+  </p>
+
+  <h2>Defensive impact</h2>
+  <ul>
+    <li>Rim protection with length, timing, and verticality.</li>
+    <li>Ability to switch onto guards in late-clock situations.</li>
+    <li>Strong defensive rebounding to finish possessions.</li>
+  </ul>
+
+  <h2>Offensive role</h2>
+  <ul>
+    <li>Primary roll man in pick-and-roll actions.</li>
+    <li>Short-roll midrange and playmaking when traps come.</li>
+    <li>Post-ups and duck-ins against mismatches or smaller lineups.</li>
+  </ul>
+</PlayerLayout>

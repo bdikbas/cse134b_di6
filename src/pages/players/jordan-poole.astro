@@ -1,0 +1,29 @@
+---
+import PlayerLayout from "../../layouts/PlayerLayout.astro";
+
+const name = "Jordan Poole";
+const team = "New Orleans Pelicans";
+const position = "Guard";
+---
+
+<PlayerLayout {name} {team} {position}>
+  <p>
+    Jordan Poole is a scoring guard known for his handle, shot-creation, and
+    confidence from deep. At his best, he provides on-ball creation and spacing
+    as a perimeter scorer who can run pick-and-rolls and attack closeouts.
+  </p>
+
+  <h2>Offensive strengths</h2>
+  <ul>
+    <li>Self-created threes off the dribble and step-backs.</li>
+    <li>Capability to run second-side pick-and-roll actions.</li>
+    <li>Finishing with floaters and crafty layups when he gets downhill.</li>
+  </ul>
+
+  <h2>Development areas</h2>
+  <ul>
+    <li>Decision-making with the ball to balance scoring and playmaking.</li>
+    <li>Turnover reduction under pressure and traps.</li>
+    <li>Defensive consistency and engagement across full games.</li>
+  </ul>
+</PlayerLayout>

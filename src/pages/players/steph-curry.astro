@@ -1,0 +1,31 @@
+---
+import PlayerLayout from "../../layouts/PlayerLayout.astro";
+
+const name = "Stephen Curry";
+const team = "Golden State Warriors";
+const position = "Guard";
+---
+
+<PlayerLayout {name} {team} {position}>
+  <p>
+    Stephen Curry is a generational shooter whose three-point gravity completely
+    changes how defenses have to play. He creates advantages both on and off the
+    ball, using relocations, handoffs, and screens to constantly pressure the
+    defense.
+  </p>
+
+  <h2>Offensive strengths</h2>
+  <ul>
+    <li>Deep three-point shooting off the dribble and off the catch.</li>
+    <li>Elite off-ball movement through relocations and cuts.</li>
+    <li>Pick-and-roll creation that bends defenses toward half-court.</li>
+    <li>Elite ball-handling skills to create space for himself to get his shot off.</li>
+  </ul>
+
+  <h2>Impact on teammates</h2>
+  <ul>
+    <li>Opens driving lanes for slashers because defenders stay glued to him.</li>
+    <li>Makes bigs more effective as screeners and short-roll passers.</li>
+    <li>Forces constant defensive communication, creating breakdowns.</li>
+  </ul>
+</PlayerLayout>

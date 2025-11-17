@@ -1,0 +1,18 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { name, team, position } = Astro.props;
+---
+
+<BaseLayout title={name} description={`Profile for ${name}`}>
+  <article>
+    <header>
+      <h1>{name}</h1>
+      <p>{team} · {position}</p>
+    </header>
+
+    <section>
+      <slot />
+    </section>
+  </article>
+</BaseLayout>

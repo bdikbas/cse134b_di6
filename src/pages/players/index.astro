@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PlayerCard from "../../components/PlayerCard.astro";
+
+const players = [
+  {
+    name: "Stephen Curry",
+    team: "Golden State Warriors",
+    position: "Guard",
+    href: "/players/steph-curry",
+    blurb: "Greatest Shooter of all time and a top 2 Point Guard as well (he isn't 2)",
+  },
+  {
+    name: "Anthony Davis",
+    team: "Dallas Mavericks",
+    position: "Center/Forward",
+    href: "/players/anthony-davis",
+    blurb: "Two-way big who anchors the defense and scores efficiently inside the arc. Known to be injury prone, but top 15 player when healthy",
+  },
+  {
+    name: "Jordan Poole",
+    team: "New Orlean Pelicans",
+    position: "Guard",
+    href: "/players/jordan-poole",
+    blurb: "Flashy guard who can score heat up in a hurry and shoot the lights out.",
+  },
+];
+---
+
+<BaseLayout title="Players" description="List of basketball player profiles">
+  <h1>Players</h1>
+  <p>Select a player to view a detailed profile.</p>
+
+  <section>
+    {players.map((p) => (
+      <PlayerCard {...p} />
+    ))}
+  </section>
+</BaseLayout>
